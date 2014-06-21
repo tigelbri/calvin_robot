@@ -1,0 +1,59 @@
+<package>
+  <name>calvin_bringup</name>
+  <version>1.0.0</version>
+  <description>calvin_bringup</description>
+  <maintainer email="apotenza@uos.de">apotenza</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/calvin_bringup</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>apotenza</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>calvin_description</build_depend>
+  <build_depend>calvin_joint_commander</build_depend>
+  <build_depend>imu_filter_madgwick</build_depend>
+  <build_depend>katana</build_depend>
+  <build_depend>laser_filters</build_depend>
+  <build_depend>libuvc_camera</build_depend>
+  <build_depend>openni_launch</build_depend>
+  <build_depend>phidgets_imu</build_depend>
+  <build_depend>robot_pose_ekf</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>sick_tim3xx</build_depend>
+  <build_depend>volksbot_driver</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>calvin_description</run_depend>
+  <run_depend>calvin_joint_commander</run_depend>
+  <run_depend>imu_filter_madgwick</run_depend>
+  <run_depend>katana</run_depend>
+  <run_depend>laser_filters</run_depend>
+  <run_depend>libuvc_camera</run_depend>
+  <run_depend>openni_launch</run_depend>
+  <run_depend>phidgets_imu</run_depend>
+  <run_depend>robot_pose_ekf</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>sick_tim3xx</run_depend>
+  <run_depend>volksbot_driver</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>calvin_description</test_depend> -->
+  <!-- <test_depend>calvin_joint_commander</test_depend> -->
+  <!-- <test_depend>imu_filter_madgwick</test_depend> -->
+  <!-- <test_depend>katana</test_depend> -->
+  <!-- <test_depend>laser_filters</test_depend> -->
+  <!-- <test_depend>libuvc_camera</test_depend> -->
+  <!-- <test_depend>openni_launch</test_depend> -->
+  <!-- <test_depend>phidgets_imu</test_depend> -->
+  <!-- <test_depend>robot_pose_ekf</test_depend> -->
+  <!-- <test_depend>robot_state_publisher</test_depend> -->
+  <!-- <test_depend>sick_tim3xx</test_depend> -->
+  <!-- <test_depend>volksbot_driver</test_depend> -->
+
+</package>
