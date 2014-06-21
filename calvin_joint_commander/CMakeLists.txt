@@ -11,9 +11,11 @@ include_directories(include ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
 include(${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake)
 gencfg()
 
-target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
-add_executable(joint_commander src/joint_commander.cpp)
-
 catkin_package(
     CATKIN_DEPENDS roscpp dynamic_reconfigure std_msgs sensor_msgs
 )
+
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+add_executable(joint_commander src/joint_commander.cpp)
+
+

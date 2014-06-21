@@ -6,11 +6,13 @@ project(calvin_pick_n_place)
 # TODO: remove all from COMPONENTS that are not catkin packages.
 find_package(catkin REQUIRED COMPONENTS roscpp tf actionlib moveit_ros_planning_interface control_msgs geometry_msgs moveit_msgs object_recognition_msgs shape_msgs visualization_msgs)
 
-include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
-
-add_executable(calvin_pick_n_place src/calvin_pick_n_place.cpp)
-
 # catkin_package parameters: http://ros.org/doc/groovy/api/catkin/html/dev_guide/generated_cmake_api.html#catkin-package
 catkin_package(
     CATKIN_DEPENDS roscpp tf actionlib moveit_ros_planning_interface control_msgs geometry_msgs moveit_msgs object_recognition_msgs shape_msgs visualization_msgs
 )
+
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
+
+add_executable(calvin_pick_n_place src/calvin_pick_n_place.cpp)
+
+
